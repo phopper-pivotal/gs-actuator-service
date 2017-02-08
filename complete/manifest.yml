@@ -2,9 +2,9 @@
 applications:
 - name: gs-actuator-service
   memory: 512M
-  instances: 1
   host: gs-actuator-service-${random-word}
   path: ./target/gs-actuator-service-0.1.0.jar
+  instances: 3
   buildpack: https://github.com/cloudfoundry/java-buildpack.git
   env:
     INFO_environment.deployment: blue
